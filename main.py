@@ -9,14 +9,6 @@ from matplotlib.animation import FuncAnimation
 
 
 # Sorting generator functions for visualization
-def bubble_sort(arr):
-    n = len(arr)
-    for i in range(n):
-        for j in range(n - i - 1):
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
-                yield arr[:]  # Yield a copy for animation
-
 def partition(arr, low, high):
     pivot = arr[high]
     i = low - 1
